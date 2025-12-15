@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Md Arif — Interactive Glass Resume</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+    <header class="topbar">
+      <div class="brand">
+        <div class="avatar"><img src="shadi-picture.jpg" alt=""></div>
+        <div>
+          <div class="name">Md Arif</div>
+          <div class="role">Web Developer</div>
+        </div>
+      </div>
+
+      <nav class="top-controls" aria-label="Quick links">
+        <a href="#projects" class="btn small">Projects</a>
+        <a href="#achievements" class="btn small">Achievements</a>
+        <a href="#contact" class="btn small">Contact</a>
+        <button id="menu-toggle" class="icon-btn" aria-expanded="false" aria-controls="side">☰</button>
+      </nav>
+    </header>
+
+    <main class="layout">
+      <!-- SIDEBAR / LEFT -->
+      <aside id="side" class="panel" aria-label="Contact and skills">
+        <section class="article-0 card contact-card">
+          <h2 class="card-title">Contact</h2>
+          <a class="contact-link" href="mailto:mdarif912848@gmail.com">✉️mdarif912848@gmail.com</a>
+          <a class="contact-link" href="tel:+919128485633">📞 +91 9128485633</a>
+          <a class="contact-link" target="_blank" rel="noopener" href="https://www.linkedin.com/in/">LinkedIn</a>
+          <a class="contact-link" target="_blank" rel="noopener" href="https://github.com/ariffam99?tab=overview&from=2025-09-01&to=2025-09-30">GitHub</a>
+        </section>
+
+        <section class="article-0 card skills-card" id="skills">
+          <h2 class="card-title">Skills</h2>
+
+          <!-- accessible accordion -->
+          <div class="accordion">
+            <button class="acc-btn" aria-expanded="false" aria-controls="panel-1">Core Skills <span class="chev">▾</span></button>
+            <div id="panel-1" class="acc-panel" hidden>
+              <div class="chips">
+                <span class="chip">HTML</span>
+                <span class="chip">CSS</span>
+                <span class="chip">JavaScript</span>
+              </div>
+            </div>
+
+            <button class="acc-btn" aria-expanded="false" aria-controls="panel-2">Tools & Other <span class="chev">▾</span></button>
+            <div id="panel-2" class="acc-panel" hidden>
+              <div class="chips">
+                <span class="chip">Git & GitHub</span>
+                <span class="chip">Figma</span>
+                <span class="chip">VS Code</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </aside>
+
+      <!-- MAIN CONTENT / RIGHT -->
+      <section class="content">
+        <article class=" article-0 card about-card">
+          <h2 class="card-title">About Me</h2>
+          <p>Motivated Frontend Developer skilled in HTML, CSS, and JavaScript. Dedicated to crafting clean, modern, and responsive web interfaces with attention to detail and performance.</p>
+        </article>
+
+        <article id="achievements" class=" article-0 card achievements-card">
+          <h2 class="card-title">Achievements</h2>
+          <div class="ach-grid">
+            <div class="ach-card">
+              <div class="ach-front">Personal/Academic Projects</div>
+              <div class="ach-back">Developed multiple responsive websites using HTML,CSS, and JS</div>
+            </div>
+            <div class="ach-card">
+              <div class="ach-front">Top Performer</div>
+              <div class="ach-back">Ranked in Top 5% in Final Year of BCA</div>
+            </div>
+            <div class="ach-card">
+              <div class="ach-front">UI Design </div>
+              <div class="ach-back">Learn Web Developtment From Online Platforms (YouTube) </div>
+            </div>
+            <div class="ach-card">
+              <div class="ach-front">Open Source</div>
+              <div class="ach-back">Contributed to UI Design in My Final Year of BCA</div>
+            </div>
+          </div>
+        </article>
+
+        <article id="projects" class="article-0 card projects-card">
+          <h2 class="card-title">Projects</h2>
+          <div class="proj-grid">
+            <div class="proj" data-desc="Interactive Glass Resume — responsive single-page resume using HTML/CSS/JS.">
+              <h3>Interactive Glass Resume</h3>
+              <p>Glassmorphism UI, expandable skills, hover achievements, responsive.</p>
+              <button class="btn view" data-title="Interactive Glass Resume">View</button>
+            </div>
+
+            <div class="proj" >
+              <h3>Smart Weather UI</h3>
+              <p>Weather app with animated backgrounds and local storage.</p>
+              <!-- <button class="btn view" data-title="Smart Weather UI"> -->
+                
+          <a class="contact-link" target="_blank" rel="noopener" href=" https://ariffam99.github.io/3rd-Year-Project/
+"><button class="btn view" >View</button></a>
+              </button>
+            </div>
+
+            
+          </div>
+        </article>
+
+        <article id="contact" class="article-0 card education-card">
+          <h2 class="card-title">Education</h2>
+          <p><strong>Bachelor of Computer Applications (BCA)</strong><br>
+          Z.A. Islamia College of Technology and Management, M.M.H.A. &amp; P. University, Patna<br>
+          Graduated: 2025</p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <small>Designed &amp; built by Md Arif — Frontend Developer</small>
+    </footer>
+
+    <!-- modal / toast area -->
+    <div id="modal" class="modal" aria-hidden="true">
+      <div class="modal-card" role="dialog" aria-modal="true">
+        <button id="modal-close" class="icon-btn">✕</button>
+        <h3 id="modal-title"></h3>
+        <p id="modal-desc"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+
+               
+             
+
+</body>
+</html>
